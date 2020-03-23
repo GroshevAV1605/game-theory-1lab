@@ -42,7 +42,7 @@ const App = () => {
         <tbody>
           {Array(matrixSize).fill("").map((el, i)=>(
             <tr key={i}>
-              {Array(matrixSize).fill("").map((le, j)=> <td key={j}><input type="text" value={matrix[i][j]} onChange={(e, i, j)=>handleMatrixChange(e, i, j)}></input></td>)}
+              {Array(matrixSize).fill("").map((le, j)=> <td key={j}><input type="text" value={matrix[i][j]} onChange={(e)=>handleMatrixChange(e, i, j)}></input></td>)}
             </tr>
           ))}
         </tbody>
